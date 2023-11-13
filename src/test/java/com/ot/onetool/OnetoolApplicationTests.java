@@ -1,21 +1,19 @@
 package com.ot.onetool;
 
 import com.ot.onetool.Mapper.UserMapper;
-import com.ot.onetool.POJO.User;
-import jakarta.annotation.Resource;
+import org.apache.ibatis.annotations.Mapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import java.sql.Connection;
+import javax.annotation.Resource;
 
 @SpringBootTest
-
-class OnetoolApplicationTests {
+class OneToolApplicationTests {
     @Resource
     UserMapper userMapper;
     @Test
     void contextLoads() {
-        userMapper.insert(new User());
+        System.out.println(userMapper.selectList(null));
     }
 
 }
