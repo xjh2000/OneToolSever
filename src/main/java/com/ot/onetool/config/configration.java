@@ -7,12 +7,11 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.util.ReflectionUtils;
 import org.springframework.web.servlet.mvc.method.RequestMappingInfoHandlerMapping;
-import springfox.documentation.spring.web.plugins.WebMvcRequestHandlerProvider;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
-@ComponentScan("com.ot.onetool.Mapper")
+@ComponentScan("com.ot.onetool")
 public class configration {
 
 }

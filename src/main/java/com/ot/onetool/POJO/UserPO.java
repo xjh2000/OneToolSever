@@ -29,12 +29,13 @@ public class UserPO implements Serializable {
     /**
      * uid
      */
-    @TableId(value = "uid", type = IdType.AUTO)
+    @TableId(value = "uid", type = IdType.ASSIGN_ID)
     private Long uid;
 
     /**
      * 账号
      */
+
     private String username;
 
     /**
